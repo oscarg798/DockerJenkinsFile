@@ -12,7 +12,7 @@ We modified the image to install docker inside of it in order to build docker im
 
 2. `docker image build -t jenkins .`
 
-In this command we are building the image and tagging it as jenkins so we can refer later to it as jenkins
+- In this command we are building the image and tagging it as jenkins so we can refer later to it as jenkins
 
 3. `docker container run --publish 8080:<PORT YOU WANT> --detach -v <Jenkins Directory of your host machine>:/var/jenkins_home:z -v /var/run/docker.sock:/var/run/docker.sock --name jenkins jenkins`
 
